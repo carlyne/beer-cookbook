@@ -11,6 +11,7 @@ const server = createServer(app);
 
 app.link('/css', __dirname + '/public/styles');
 app.link('/js', __dirname + '/public/js');
+app.link('/dist', __dirname + '/public/dist');
 app.link('/img', __dirname + '/public/images');
 app.link('/node_modules', __dirname + '/node_modules');
 

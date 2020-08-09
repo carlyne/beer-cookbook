@@ -4,29 +4,11 @@
     <meta charset="utf-8">
     <title>My site</title>
 
-    <script src="/node_modules/@kevinbalicot/custom-element/dist/custom-element.min.js" charset="utf-8"></script>
+    <!--<script src="/node_modules/@kevinbalicot/custom-element/dist/custom-element.min.js" charset="utf-8"></script>-->
+    <script src="https://github.com/kevinbalicot/custom-element/releases/download/v1.1.0/custom-element.min.js"></script>
+    <script src="/dist/app.js"></script>
 </head>
 <body>
-    <my-component></my-component>
-
-    <script type="application/javascript">
-        class MyComponent extends CustomElement {
-            constructor() {
-                super();
-
-                this.name = 'Jean';
-            }
-
-            static get template() {
-                return '<h1>Hello <span [innerHTML]="this.name"></span> !</h1>';
-            }
-
-            static get styles() {
-                return [':host(span) { color: red; }'];
-            }
-        }
-	    
-	window.customElements.define('my-component', MyComponent);
-    </script>
+    <beer-app></beer-app>
 </body>
 </html>
