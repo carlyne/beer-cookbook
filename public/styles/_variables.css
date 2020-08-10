@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap');
+
+:root {
+
+    /**
+    * Couleurs
+    */
+    --main-color: #BFA678;
+    --secondary-color: #737373;
+    --main-bg-color: #FFFAD5;
+    --secondary-bg-color: #B38963;
+    --dark: #0D0D0D;
+    --white: #F2F2F2;
+
+
+    --main-hg-color: #BD4932;
+    --secondary-hg-color: #105B63;
+
+    /**
+    * Typographie
+    */
+    --font-family: 'Noticia Text', serif;
+    --font-default: 16px;
+
+    /**
+    * Responsive
+    */
+    --med-screen: 48rem;
+    --lg-screen: 62rem;
+
+    /**
+    * Sizing
+    */
+    --navbar-h: 75px;
+    --navbar-h-med: 150px;
+
+    /**
+    * Margin and Padding
+    */
+    --sm-p: 15px;
+    --sm-m: 15px;
+}

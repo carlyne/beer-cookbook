@@ -1,15 +1,23 @@
 import CoreElement from "./components/core-element";
+import "./components/home-component";
+import "./components/nav-component";
 
 class App extends CoreElement {
     constructor() {
         super();
-        this.name = 'Jean';
+        this.route = '/';
     }
 
+    onConnected() {
+        window.addEventListener("hashchange", () => {
+            this.update({route: window.location.hash.replace('#','')});
+        })
+    }   
   
     static get template() {
         return `
-            <h1 [innerHTML]="this.name"></h1>
+            <nav-component></nav-component>
+            <home-component #if="this.route === '/'"></home-component>
         `;
     }
 }

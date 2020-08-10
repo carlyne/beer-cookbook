@@ -1,17 +1,80 @@
-:root {
-    /* main */
-    --main-color: #BFA678;
-    --secondary-color: #737373;
-    --main-bg-color: #F2D6BD;
-    --secondary-bg-color:  #FFFAD5;
-    --dark: #0D0D0D;
-    --white: #F2F2F2;
+@import '_variables.css';
 
-    /* highlight */
-    --main-hg-color: #BD4932;
-    --secondary-hg-color: #105B63;
+/**
+* GENERAL
+*/
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    color: var(--main-color);
-}   
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-default);
+    font-family: var(--font-family);
+
+    background-color: var(--main-bg-color);
+    color: var(--dark);
+}
+
+#header-banner {
+    margin-top: var(--navbar-h);
+}
+/*_*/
+    @media screen and (min-width: 48rem) {
+        #header-banner {
+            margin-top: var(--navbar-h-med);
+        }
+    }
+
+ 
+/**
+* NAVBAR ET MENU
+*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-h);
+}
+/*_*/
+    @media screen and (min-width: 48rem) {
+        nav {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            height: var(--navbar-h-med);
+        }
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    height: 100%;
+    display: none;
+}
+/*_*/
+    @media screen and (min-width: 48rem) {
+        nav ul {
+            display: flex;
+        }
+        /*_*/
+            nav ul li {
+                padding: var(--sm-p);
+                height: 100%;
+                display: flex;
+            }
+            /*_*/
+                nav ul li a {
+                    align-self: center;
+                }
+    }
+
+
