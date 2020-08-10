@@ -1,3 +1,17 @@
-h1 {
-    color: green;
+:root {
+    /* main */
+    --main-color: #BFA678;
+    --secondary-color: #737373;
+    --main-bg-color: #F2D6BD;
+    --secondary-bg-color:  #FFFAD5;
+    --dark: #0D0D0D;
+    --white: #F2F2F2;
+
+    /* highlight */
+    --main-hg-color: #BD4932;
+    --secondary-hg-color: #105B63;
 }
+
+h1 {
+    color: var(--main-color);
+}   
