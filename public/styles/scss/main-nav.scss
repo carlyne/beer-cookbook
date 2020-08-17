@@ -1,0 +1,43 @@
+#main-nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: $main-nav-height;
+	background: $white;
+	width: 100%;
+	
+	@media screen and (min-width: $med-screen) {
+		height: $main-nav-height-screen;
+	}
+}
+
+#main-logo,
+#main-menu {
+	padding: $sizing;
+}
+
+#toggle-menu {
+	display: block;
+	margin: $sizing;
+	
+	@media screen and (min-width: $med-screen) {
+		display: none;
+	}
+}
+
+#main-menu {
+	display: none;
+	
+	@media screen and (min-width: $med-screen) {
+		display: flex;
+		
+		& li {
+			padding: $sizing / 2;
+		}
+	}
+}
+

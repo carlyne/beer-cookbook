@@ -9,7 +9,8 @@ const { createApp, createServer } = require('yion');
 const app = createApp();
 const server = createServer(app);
 
-app.link('/css', __dirname + '/public/styles');
+app.link('/css', __dirname + '/public/styles/css');
+app.link('/scss', __dirname + '/public/styles/scss');
 app.link('/js', __dirname + '/public/js');
 app.link('/dist', __dirname + '/public/dist');
 app.link('/img', __dirname + '/public/images');

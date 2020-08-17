@@ -1,0 +1,45 @@
+
+/**
+* BANNIERE
+*/
+#header figure {
+	margin-top: $main-nav-height;
+	min-height: 350px;
+	width: 100%;
+	background: $main-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	@media screen and (min-width: $med-screen) {
+		margin-top: $main-nav-height-screen;
+		min-height: 500px;
+	}
+}
+
+
+/**
+* PRESENTATION
+*/
+#section-presentation {
+	display: flex;
+	flex-direction: column;
+	padding: $sizing;
+	
+	@media screen and (min-width: $med-screen) {
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	& > section, & > nav {
+		width: 100%;
+		
+		@media screen and (min-width: $med-screen) {
+			width: 50%;
+		}
+	}
+}
+
+#action-nav ul li{
+	margin: 15px 0;
+}
