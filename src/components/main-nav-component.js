@@ -7,17 +7,17 @@ export default class MainNavComponent extends CoreElement {
 
     static get template() {
         return `
-        <nav id="main-nav">
-            <img id="main-logo" alt="logo-beer">
-            <button id="toggle-menu">Menu</button>
-            
-            <ul id="main-menu">
-                <li>Recettes</li>
-                <li>Catalogue</li>
-                <li>Guide</li>
-                <li>Connexion</li>
-            </ul>
-        </nav>
+            <nav id="main-nav">
+                <img id="main-logo" alt="logo-beer">
+                <button id="toggle-menu">Menu</button>
+
+                <ul id="main-menu">
+                    <li>Recettes</li>
+                    <li>Catalogue</li>
+                    <li>Guide</li>
+                    <li>Connexion</li>
+                </ul>
+            </nav>
         `;
     }
 }

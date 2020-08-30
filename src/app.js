@@ -10,9 +10,9 @@ class App extends CoreElement {
     }
 
     onConnected() {
-        window.addEventListener("hashchange", () => {
-            this.update({route: window.location.hash.replace('#','')});
-        })
+        window.addEventListener('hashchange', () => {
+            this.update({ route: window.location.hash.replace('#','') });
+        });
     }   
 
     static get template() {

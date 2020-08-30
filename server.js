@@ -20,4 +20,4 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html', 'index.html', "text/html", false);
 });
 
-server.listen(NODE_PORT);
+server.listen(NODE_PORT).on('listening', () => console.log(`Server started on port ${NODE_PORT}.`));

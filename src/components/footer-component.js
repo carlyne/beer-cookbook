@@ -7,15 +7,15 @@ export default class FooterComponent extends CoreElement {
 
     static get template() {
         return `
-        <footer id="footer">
-            <p>Brew Yourslef</p>
-            <nav id="share-nav">
-                <ul>
-                    <li>Github</li>
-                    <li>Twitter</li>
-                </ul>
-            </nav>
-        </footer>
+            <footer id="footer">
+                <p>Brew Yourslef</p>
+                <nav id="share-nav">
+                    <ul>
+                        <li>Github</li>
+                        <li>Twitter</li>
+                    </ul>
+                </nav>
+            </footer>
         `;
     }
 }

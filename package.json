@@ -8,7 +8,8 @@
     "start": "node server.js",
     "build-prod": "browserify src/app.js -t [ babelify ] | uglifyjs -c -o public/dist/app.min.js",
     "build": "browserify src/app.js -d -o public/dist/app.js -t [ babelify ]",
-    "scss" : "node-sass --watch public/styles/scss -o public/styles/css"
+    "watch": "watchify src/app.js -v -d -o public/dist/app.js -t [ babelify ]",
+    "scss": "node-sass --watch public/styles/scss -o public/styles/css"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "@babel/runtime": "^7.11.2",
     "babelify": "^10.0.0",
     "browserify": "^16.5.2",
-    "uglify-es": "^3.3.9"
+    "uglify-es": "^3.3.9",
+    "watchify": "^3.11.1"
   }
 }
