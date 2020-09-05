@@ -24,6 +24,10 @@ img, button, li, article {
 	padding: 0
 }
 
+footer {
+	padding: $sizing;
+}
+
 #header, #content,
 #footer {
 	width: 100%;
@@ -55,7 +59,14 @@ ul {
 	list-style-type: none;
 }
 
+#display-pages {
+	margin-top: $main-nav-height;
+	padding: $sizing;
 
+	@media screen and (min-width: $med-screen) {
+		margin-top: $main-nav-height-screen;
+	}
+}
 
 /**
 * BUTTONS
@@ -72,3 +83,4 @@ button {
 	border-radius: 13px;
 	color: $white;
 }
+

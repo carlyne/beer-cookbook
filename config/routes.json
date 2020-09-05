@@ -1,0 +1,8 @@
+{
+    "malts" : "/api/malts",
+    "yeastTypes" : "/api/yeast-types",
+    "yests" : "/api/yeasts",
+    "beerTypes" : "/api/beer-types",
+    "hopCategories" : "/api/hop-categories",
+    "hops" : "/api/hops"
+}

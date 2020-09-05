@@ -8,7 +8,7 @@ export default class MainNavComponent extends CoreElement {
     static get template() {
         return `
             <nav id="main-nav">
-                <img id="main-logo" alt="logo-beer">
+                <a href="/#/"><img id="main-logo" alt="logo-beer"></a>
                 <button id="toggle-menu">Menu</button>
 
                 <ul id="main-menu">
@@ -16,6 +16,7 @@ export default class MainNavComponent extends CoreElement {
                     <li>Catalogue</li>
                     <li>Guide</li>
                     <li>Connexion</li>
+                    <li><a href="/#/administration">Administration</a></li>
                 </ul>
             </nav>
         `;

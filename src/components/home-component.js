@@ -13,7 +13,7 @@ export default class HomeComponent extends CoreElement {
                 </figure>
             </header>
 
-            <main id="content">
+            <section id="content">
                 <section id="section-presentation">
 
                     <section>
@@ -42,7 +42,7 @@ export default class HomeComponent extends CoreElement {
                     <article class="card"></article>
 
                 </section>
-            </main>
+            </section>
         ` ;
     }
 

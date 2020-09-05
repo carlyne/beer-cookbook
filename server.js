@@ -20,4 +20,8 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html', 'index.html', "text/html", false);
 });
 
+app.get('/config/routes', (req, res) => {
+    res.sendFile(__dirname + '/config/routes.json', 'routes.json', "application/json", false);
+});
+
 server.listen(NODE_PORT).on('listening', () => console.log(`Server started on port ${NODE_PORT}.`));

@@ -1,9 +1,7 @@
-
 /**
 * BANNIERE
 */
 #header figure {
-	margin-top: $main-nav-height;
 	min-height: 350px;
 	width: 100%;
 	background: $main-color;
@@ -12,7 +10,6 @@
 	justify-content: center;
 	
 	@media screen and (min-width: $med-screen) {
-		margin-top: $main-nav-height-screen;
 		min-height: 500px;
 	}
 }

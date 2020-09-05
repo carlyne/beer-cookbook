@@ -49,19 +49,9 @@
         padding: 10px; } }
 
 /**
-* BUTTONS & LINKS
-*/
-.btn-link {
-  background-color: #0D0D0D;
-  padding: 20px;
-  border-radius: 13px;
-  color: #F2F2F2; }
-
-/**
 * BANNIERE
 */
 #header figure {
-  margin-top: 75px;
   min-height: 350px;
   width: 100%;
   background: #BFA678;
@@ -70,7 +60,6 @@
   justify-content: center; }
   @media screen and (min-width: 48rem) {
     #header figure {
-      margin-top: 100px;
       min-height: 500px; } }
 
 /**
@@ -112,6 +101,9 @@ img, button, li, article {
   margin: 0;
   padding: 0; }
 
+footer {
+  padding: 20px; }
+
 #header, #content,
 #footer {
   width: 100%; }
@@ -135,6 +127,13 @@ h2 {
 
 ul {
   list-style-type: none; }
+
+#display-pages {
+  margin-top: 75px;
+  padding: 20px; }
+  @media screen and (min-width: 48rem) {
+    #display-pages {
+      margin-top: 100px; } }
 
 /**
 * BUTTONS
