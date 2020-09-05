@@ -4,12 +4,12 @@ export default class MaltsComponent extends CoreElement {
     constructor() {
         super();
         this.maltsData = [];
+        this.fetch = this.get('HttpFetch');
     }
     
     onConnected() {
-        fetch(window.boxstore.get('apiHost') + window.boxstore.get('api.malts'))
-        .then(result=> result.json())
-        .then(data => this.update({ maltsData: data}));
+        this.fetch.get(window.boxstore.get('apiHost') + window.boxstore.get('api.malts'))
+            .then(data => this.update({ maltsData: data}));
     }
 
     static get template() {
