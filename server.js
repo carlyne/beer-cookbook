@@ -13,7 +13,7 @@ app.link('/css', __dirname + '/public/styles/css');
 app.link('/scss', __dirname + '/public/styles/scss');
 app.link('/js', __dirname + '/public/js');
 app.link('/dist', __dirname + '/public/dist');
-app.link('/img', __dirname + '/public/images');
+app.link('/img', __dirname + '/public/img');
 app.link('/node_modules', __dirname + '/node_modules');
 
 app.get('/', (req, res) => {

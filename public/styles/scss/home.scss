@@ -1,23 +1,37 @@
-/**
-* BANNIERE
-*/
-#header figure {
-	min-height: 350px;
+// ====== ===================================== //
+// ====== BANNIERE								//
+// ====== ===================================== //
+
+#header {
+	height: 350px;
 	width: 100%;
-	background: $main-color;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	
 	@media screen and (min-width: $med-screen) {
 		min-height: 500px;
 	}
 }
 
+#header .fig-banner-l {
+	width: 20%;
+	height: 100%;
+	background-image: url('/img/banner.jpg');
+	background-size: cover;
+}
 
-/**
-* PRESENTATION
-*/
+#header .fig-banner-r {
+	width: 70%;
+	height: 100%;
+	background-image: url('/img/banner.jpg');
+	background-size: cover;
+}
+
+
+// ====== ===================================== //
+// ====== PRESENTATION							//
+// ====== ===================================== //
+
 #section-presentation {
 	display: flex;
 	flex-direction: column;

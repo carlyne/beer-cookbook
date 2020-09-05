@@ -7,6 +7,7 @@ export default class CoreElement extends CustomElement {
 
     static get styles() {
         return [
+            '@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");',
             '@import url("/css/main.css");',
         ];
     }

@@ -30,6 +30,7 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "@kevinbalicot/custom-element": "^1.1.0",
     "boxstore": "^0.5.0",
     "dotenv": "^8.2.0",

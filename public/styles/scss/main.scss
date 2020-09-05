@@ -3,9 +3,10 @@
 @import 'home.scss';
 
 
-/**
-* GENERAL
-*/
+// ====== ===================================== //
+// ====== RESET									//
+// ====== ===================================== //
+
 body {
 	width: 100%;
 	margin: 0 auto;
@@ -13,19 +14,14 @@ body {
 	font-size: $font-default-size;
 	font-family:$font-family;
 	color: $dark;
-	background: $main-bg-color;
 	position: relative;
 }
 
 header, main, figure, section, 
-nav, ul, div, footer, 
-img, button, li, article {
+nav, ul, div, img, 
+button, li, article {
 	margin: 0;
 	padding: 0
-}
-
-footer {
-	padding: $sizing;
 }
 
 #header, #content,
@@ -37,6 +33,11 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+
+// ====== ===================================== //
+// ====== GENERAL								//
+// ====== ===================================== //
 
 h1 {
 	font-size: 4rem;
@@ -59,23 +60,33 @@ ul {
 	list-style-type: none;
 }
 
+
+// ====== ===================================== //
+// ====== DESIGN PAGES							//
+// ====== ===================================== //
+
+footer {
+	margin: 0;
+	padding: $sizing;
+}
+
 #display-pages {
 	margin-top: $main-nav-height;
-	padding: $sizing;
 
 	@media screen and (min-width: $med-screen) {
 		margin-top: $main-nav-height-screen;
 	}
 }
 
-/**
-* BUTTONS
-*/
+
+// ====== ===================================== //
+// ====== BUTTONS							    //
+// ====== ===================================== //
+
 button {
 	font-family: inherit;
 	font-size: inherit;
 }
-
 
 .btn-link {
 	background-color: $dark;

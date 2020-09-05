@@ -8,7 +8,9 @@ export default class HomeComponent extends CoreElement {
     static get template() {
         return `
             <header id="header">
-                <figure>
+                <figure class="fig-banner-l"></figure>
+
+                <figure class="fig-banner-r">
                     <h1>Beer <br> Cookbook</h1>
                 </figure>
             </header>

@@ -1,19 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap");
-/**
-* Couleurs
-*/
-/**
-* Typographie
-*/
-/**
-* Responsive
-*/
-/**
-* Sizing
-*/
-/**
-* Margin and Padding
-*/
 #main-nav {
   position: fixed;
   display: flex;
@@ -48,23 +33,27 @@
       #main-menu li {
         padding: 10px; } }
 
-/**
-* BANNIERE
-*/
-#header figure {
-  min-height: 350px;
+#header {
+  height: 350px;
   width: 100%;
-  background: #BFA678;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: space-between; }
   @media screen and (min-width: 48rem) {
-    #header figure {
+    #header {
       min-height: 500px; } }
 
-/**
-* PRESENTATION
-*/
+#header .fig-banner-l {
+  width: 20%;
+  height: 100%;
+  background-image: url("/img/banner.jpg");
+  background-size: cover; }
+
+#header .fig-banner-r {
+  width: 70%;
+  height: 100%;
+  background-image: url("/img/banner.jpg");
+  background-size: cover; }
+
 #section-presentation {
   display: flex;
   flex-direction: column;
@@ -82,9 +71,6 @@
 #action-nav ul li {
   margin: 15px 0; }
 
-/**
-* GENERAL
-*/
 body {
   width: 100%;
   margin: 0 auto;
@@ -92,17 +78,13 @@ body {
   font-size: 16px;
   font-family: "Noticia Text", serif;
   color: #0D0D0D;
-  background: #FFFAD5;
   position: relative; }
 
 header, main, figure, section,
-nav, ul, div, footer,
-img, button, li, article {
+nav, ul, div, img,
+button, li, article {
   margin: 0;
   padding: 0; }
-
-footer {
-  padding: 20px; }
 
 #header, #content,
 #footer {
@@ -128,16 +110,16 @@ h2 {
 ul {
   list-style-type: none; }
 
-#display-pages {
-  margin-top: 75px;
+footer {
+  margin: 0;
   padding: 20px; }
+
+#display-pages {
+  margin-top: 75px; }
   @media screen and (min-width: 48rem) {
     #display-pages {
       margin-top: 100px; } }
 
-/**
-* BUTTONS
-*/
 button {
   font-family: inherit;
   font-size: inherit; }
