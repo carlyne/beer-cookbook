@@ -12,11 +12,12 @@
    }
 }
 
-h1, #admin-pannel {
+#admin-pannel {
     width: 100%;
+    padding: $sizing;
 
     @media screen and (min-width: $med-screen) {
-        width: 75%;
         margin-left: $nav-link-w;
-       }
+        width: calc(100% - #{$nav-link-w});
+    }
 }

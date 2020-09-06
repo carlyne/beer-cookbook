@@ -15,9 +15,24 @@ export default class MaltsComponent extends CoreElement {
     static get template() {
         return `
             <h1>malt</h1>
-            <ul #if="this.maltsData.length">
-               <li #for="let malt of this.maltsData" [innerHtml]="malt.name"></li> 
-            </ul>
+           
+            <table #if="this.maltsData.length">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>EBC</th>
+                        <th>Pays d'origine</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr #for="let malt of this.maltsData">
+                        <td [innerHtml]="malt.name"></td>
+                        <td [innerHtml]="malt.ebc"></td>
+                        <td [innerHtml]="malt.originCode"></td>
+                    </tr>
+                </tbody>
+            </table>
         `;
     }
 }
