@@ -1,0 +1,22 @@
+#nav-admin {
+   top: $main-nav-height;
+   background-color: $secondary-hg-color;
+   color: $white;
+
+   @media screen and (min-width: $med-screen) {
+    top: $main-nav-height-screen;
+   }
+
+   .nav-btn:hover a {
+       color: $dark;
+   }
+}
+
+h1, #admin-pannel {
+    width: 100%;
+
+    @media screen and (min-width: $med-screen) {
+        width: 75%;
+        margin-left: $nav-link-w;
+       }
+}

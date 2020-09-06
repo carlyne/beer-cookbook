@@ -1,9 +1,11 @@
 import CoreElement from "./../core-element";
 
+import "./nav-admin-component";
 import "./malts-component";
 import "./houblons-component";
 import "./levures-component";
 import "./types-bieres-component";
+
 
 export default class AdministrationComponent extends CoreElement {
     constructor() {
@@ -21,21 +23,14 @@ export default class AdministrationComponent extends CoreElement {
 
     static get template() {
         return `
-            <h1>Administration</h1>
+            <nav-admin-component></nav-admin-component>
 
-            <ul>
-                <li><a href="/#/administration/malts">Malts</a></li>
-                <li><a href="/#/administration/houblons">Houblons</a></li>
-                <li><a href="/#/administration/levures">Levures</a></li>
-                <li><a href="/#/administration/types-bieres">Types de bières</a></li>
-            </ul>
-
-            <div>
+            <section id="admin-pannel">
                 <malts-component #if="this.route === '/administration/malts'"></malts-component>
                 <houblons-component #if="this.route === '/administration/houblons'"></houblons-component>
                 <levures-component #if="this.route === '/administration/levures'"></levures-component>
                 <types-bieres-component #if="this.route === '/administration/types-bieres'"></types-bieres-component>
-            </div>
+            </section>
         `;
     }
 }

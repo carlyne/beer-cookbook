@@ -43,8 +43,6 @@ class App extends CoreElement {
                 <home-component #if="this.route === '' || this.route === '/'"></home-component>
                 <administration-component #if="this.route.startsWith('/administration')"></administration-component>
             </main>
-            
-            <footer-component></footer-component>
         `;
     }
 }
