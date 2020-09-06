@@ -153,6 +153,23 @@ a, i {
       margin-left: 110px;
       width: calc(100% - 110px); } }
 
+.admin-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .admin-item-list li {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #BD4932;
+    display: flex;
+    justify-content: space-between;
+    color: #F2F2F2;
+    border-radius: 13px; }
+    @media screen and (min-width: 48rem) {
+      .admin-item-list li {
+        width: calc((100% / 6) - 20px); } }
+
 #header {
   height: 350px;
   width: 100%;

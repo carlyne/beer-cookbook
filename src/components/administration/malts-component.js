@@ -16,23 +16,13 @@ export default class MaltsComponent extends CoreElement {
         return `
             <h1>malt</h1>
            
-            <table #if="this.maltsData.length">
-                <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>EBC</th>
-                        <th>Pays d'origine</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr #for="let malt of this.maltsData">
-                        <td [innerHtml]="malt.name"></td>
-                        <td [innerHtml]="malt.ebc"></td>
-                        <td [innerHtml]="malt.originCode"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul class="admin-item-list" #if="this.maltsData.length">
+                <li #for="let malt of this.maltsData" [innerHtml]="malt.name" [id]="malt.name + '-item'">
+                    <div>
+                        <i class="fas fa-pen-square"></i> <i class="fas fa-times-circle"></i>
+                    </div>
+                </li>
+            </ul>
         `;
     }
 }

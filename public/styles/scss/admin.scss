@@ -21,3 +21,24 @@
         width: calc(100% - #{$nav-link-w});
     }
 }
+
+.admin-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+        width: calc(50% - 20px);
+        margin: 10px;
+        padding: $sizing / 2;
+        background-color: $main-hg-color;
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        border-radius: 13px;
+
+        @media screen and (min-width: $med-screen) {
+            width: calc((100% / 6) - 20px);
+        }
+    }
+}
