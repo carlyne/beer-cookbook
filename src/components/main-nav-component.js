@@ -8,15 +8,18 @@ export default class MainNavComponent extends CoreElement {
     static get template() {
         return `
             <nav id="main-nav">
-                <a href="/"><i class="fas fa-flask" id="main-logo"></i> Beer Cookbook</a>
+                <div class="menu-link-home">
+                    <a href="/"><i class="fas fa-flask" id="main-logo"></i> Beer Cookbook</a>
+                </div>
+
                 <button id="toggle-menu">Menu</button>
 
                 <ul id="main-menu">
-                    <li>Recettes</li>
-                    <li>Catalogue</li>
-                    <li>Guide</li>
-                    <li>Connexion</li>
-                    <li><a href="/#/administration">Administration</a></li>
+                    <li><a href="/#/administration">Recettes</a></li>
+                    <li><a href="/#/administration">Catalogue</a></li>
+                    <li><a href="/#/administration">Guide</a></li>
+                    <li><a href="/#/administration">Connexion</a></li>
+                    <li id="admin-link"><a href="/#/administration"><i class="fas fa-user-cog"></i></a></li>
                 </ul>
             </nav>
         `;
